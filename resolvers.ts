@@ -131,9 +131,12 @@ export const resolvers ={
 
             const datetime = response.datetime
 
+            console.log(datetime)
             const hora= datetime.split(" ")[1].split(":")[0];
-            const minuto= datetime.split(" ")[1].split(":")[2];
+            const minuto= datetime.split(" ")[1].split(":")[1];
             const date = `${hora}:${minuto}`
+
+            
         
            
             return date
